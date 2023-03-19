@@ -1,0 +1,49 @@
+{% extends 'base.html'%}
+
+{% block head %}
+
+
+
+
+{%endblock%}
+
+
+
+{% block body%} 
+
+<div class = "container text-center bg-primary text-white">
+  <h2 >  DBMS </h2>
+  <p> this is mhy first page </p>
+
+</div>
+
+
+
+
+<div class="container text-center bg-gradient  ">
+  
+  <div class="row">
+    {% for i in data[0]%}
+    <div class="col">
+      {{i[0]}}
+    </div>
+    {% endfor %}
+  </div>
+  {% for i in data[1]%}
+  <div class="row">
+    {% for j in i%}
+    <div class="col">
+      {{j}}
+    </div>
+    {% endfor %}
+  </div>
+  {% endfor %}
+    
+
+
+
+
+
+
+
+{%endblock%}
